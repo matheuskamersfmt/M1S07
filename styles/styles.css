@@ -4,13 +4,12 @@
     height: 100%;
 }
 
-.container {
+/* .container {
     display: flex;
-}
+} */
 
 .sidebar {
     background-color: #13bf00;
-    width: 220px;
 }
 
 .box {
@@ -34,4 +33,9 @@
     justify-content: center;
     display: flex;
     align-items: center;
+} 
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
 }
