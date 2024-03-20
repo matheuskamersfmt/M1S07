@@ -74,12 +74,15 @@ html, body {
 }
 
 #username,
-#password {
+#password,
+#username-register,
+#password-register {
     padding: 16px;
     border-radius: 4px;
 }
 
-#password {
+#password,
+#password-register {
     margin: 1rem;
 }
 
@@ -94,6 +97,19 @@ html, body {
     cursor: pointer;
     background-color: grey;
     color: #ffffff;
+}
+
+.container-register {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+}
+
+.register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-width: 768px) {
