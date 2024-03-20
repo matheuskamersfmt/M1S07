@@ -1,41 +1,131 @@
-* {
+html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* .container {
+.container {
     display: flex;
-} */
+    height: 100%;
+}
 
 .sidebar {
-    background-color: #13bf00;
+    width: 50%;
+    background-color: #21d8e8;
+}
+
+.signup {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    display: block;
+    margin: 0 2rem;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    border-radius: 8px;
+}
+
+.signup button {
+    padding: 8px 24px;
+    border-radius: 16px;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+.signup button:hover {
+    cursor: pointer;
+    background-color: grey;
+    color: #ffffff;
 }
 
 .box {
-    display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 50%;
+    padding: 0 2rem;
+    text-align: center;
 }
 
-.header{
-    background-color: #e21212;
-    height: 80px;
-}
-
-.content {
-    background-color: #061dee;
+.box h1, h3,
+.register h1 {
+    color: #21d8e8
 }
 
 .sidebar,
-.header,
-.content {
-    justify-content: center;
+.box {
     display: flex;
+    justify-content: center;
     align-items: center;
+    height: 100%;
 } 
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
+.social-media {
+    width: 50%;
+    padding: 1rem;
+}
+
+.social-media ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+#username,
+#password {
+    padding: 16px;
+    border-radius: 4px;
+}
+
+#password {
+    margin: 1rem;
+}
+
+.signin {
+    border-radius: 16px;
+    padding: 8px 32px;
+    background-color: #21d8e8;
+    color: #ffffff;
+}
+
+.signin:hover {
+    cursor: pointer;
+    background-color: grey;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar,
+    .box {
+        width: auto;
+        height: auto;
+    }
+
+    .signin,
+    .box {
+        margin: 1rem;
+    }
+
+    .sidebar {
+        order: 2;
+    }
+
+    .box {
+        order: 1;
+    }
+
+    .social-media {
+        width: 100%;
+    }
+
+    .signup {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
 }
